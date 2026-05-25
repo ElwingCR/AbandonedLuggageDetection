@@ -22,7 +22,8 @@ half_radius_multiplier = 0.5 # For the 'new connection' logic (e.g., 0.5 means h
 
 
 # Depth Map Settings
-depth_map_path = "/mnt/SamsungSSD/Prtljaga/ml-depth-pro/first_frame_depth_data/vid_00024_first_frame_depth.npy"
+#depth_map_path = "/mnt/SamsungSSD/Prtljaga/ml-depth-pro/first_frame_depth_data/vid_00024_first_frame_depth.npy"
+depth_map_path = os.path.join("older_method","dusslerdorf_aiport_2024_26_02_12_20pm_first_frame_depth.npy")
 depth_map_scale_factor = 2.0 # Scaling factor for the loaded depth map values
 depth_coefficient = 1000.0 # A larger value will result in larger radii overall. Tune this!
 power_factor = 0.6 # A value between 0.5 and 1.0 (e.g., 0.7, 0.8, 0.9)
@@ -30,9 +31,12 @@ power_factor = 0.6 # A value between 0.5 and 1.0 (e.g., 0.7, 0.8, 0.9)
 visual_max_radius_limit = 1000 # Define a reasonable max radius for visualization purposes
 
 # Paths
-model_path = "/mnt/SamsungSSD/Prtljaga/yolov11_new_model_indian_data/yolov11_indian_train/weights/best.pt"
-video_path = "/mnt/SamsungSSD/Prtljaga/Datasets/dataset_IITP20/IITP20_Datset_02/Abandoned_cases/medium_cases/vid_00027_cutted.mp4"
-video_path = "/mnt/SamsungSSD/Prtljaga/Datasets/dataset_IITP20/IITP20_Datset_01/Abandoned_cases/hard_cases/vid_00069.mp4" 
+model_path = os.path.join("yolov8s.pt")
+#model_path = "/mnt/SamsungSSD/Prtljaga/yolov11_new_model_indian_data/yolov11_indian_train/weights/best.pt"
+#video_path = "/mnt/SamsungSSD/Prtljaga/Datasets/dataset_IITP20/IITP20_Datset_02/Abandoned_cases/medium_cases/vid_00027_cutted.mp4"
+#video_path = "/mnt/SamsungSSD/Prtljaga/Datasets/dataset_IITP20/IITP20_Datset_01/Abandoned_cases/hard_cases/vid_00069.mp4" 
+video_path = os.path.join("photoshop_video_5.mp4")
+#video_path = os.path.join("photoshop_video_5.mp4")
 
 # You can uncomment and choose other video paths if needed
 # video_path = "/mnt/SamsungSSD/Prtljaga/photoshop_videji/2 person_ abanonded_luggage_walk_by.mp4"

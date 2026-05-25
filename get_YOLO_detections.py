@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 import os
 
 # === Paths ===
-video_path = os.path.join("older_method","Hailuo_Video_CreateaCCTVfootageofpeopl_398561169233838086.mp4")
+video_path = os.path.join("photoshop_video_5.mp4")
+#video_path = os.path.join("AI_videos","Hailuo_Video_Create a CCTV footage of peopl_398579532735619073.mp4")
 model_path = os.path.join("korzo_model.pt")
 #model_path = "/mnt/SamsungSSD/Prtljaga/yolov11_new_model_100epochs_indian_data/yolov11_default_indian_train_100_epochs/weights/best.pt"
 #model_path = "/mnt/SamsungSSD/Prtljaga/yolov11_new_model_indian_data/yolov11_indian_train/weights/best.pt"
